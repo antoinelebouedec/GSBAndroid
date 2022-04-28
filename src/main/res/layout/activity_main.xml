@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/menuTextViewTitre"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginBottom="50dp"
+        android:text="Application de gestion des échantillons de compléments alimentaires"
+        android:textSize="70px"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/menuButtonAjoutEchantillon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/menuButtonAjoutEchantillon"
+        android:layout_width="270dp"
+        android:layout_height="70dp"
+        android:layout_margin="10dp"
+        android:background="@android:color/black"
+        android:text="Ajouter un nouvel échantillon"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/menuButtonListeEchantillons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menuTextViewTitre" />
+
+    <Button
+        android:id="@+id/menuButtonMajEchantillons"
+        android:layout_width="270dp"
+        android:layout_height="70dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="204dp"
+        android:background="@android:color/black"
+        android:text="Maj d'un échantillon"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menuButtonListeEchantillons" />
+
+    <Button
+        android:id="@+id/menuButtonListeEchantillons"
+        android:layout_width="270dp"
+        android:layout_height="70dp"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="4dp"
+        android:background="@android:color/black"
+        android:text="Liste des échantillons"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/menuButtonMajEchantillons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

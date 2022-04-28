@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GSB</string>
+    <string name="mnuAjout">AjoutEchantillon</string>
+    <string name="mnuListe">ListeEchantillons</string>
+    <string name="mnuMaj">MajEchantillons</string>
+    <string name="mnuQuitter">Quitter</string>
+</resources>

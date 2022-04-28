@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/ajoutTextViewTitre"
+        android:layout_width="279dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginBottom="50dp"
+        android:text="Saisie d'un échantillon :"
+        android:textSize="70px"
+
+        app:layout_constraintBottom_toTopOf="@+id/ajoutEditTextCode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ajoutEditTextCode"
+        android:layout_width="279dp"
+        android:layout_height="57dp"
+        android:ems="10"
+        android:hint="Saisir ici un code"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/ajoutEditTextLib"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ajoutTextViewTitre" />
+
+    <EditText
+        android:id="@+id/ajoutEditTextLib"
+        android:layout_width="279dp"
+        android:layout_height="57dp"
+        android:ems="10"
+        android:hint="Saisir ici un libellé"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/ajoutEditTextStock"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ajoutEditTextCode" />
+
+    <EditText
+        android:id="@+id/ajoutEditTextStock"
+        android:layout_width="279dp"
+        android:layout_height="57dp"
+        android:ems="10"
+        android:hint="Saisir ici un stock"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/ajoutButtonAjouter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ajoutEditTextLib" />
+
+    <Button
+        android:id="@+id/ajoutButtonAjouter"
+        android:layout_width="173dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="60dp"
+        android:background="@android:color/black"
+        android:text="Ajouter"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ajoutEditTextStock" />
+
+    <Button
+        android:id="@+id/ajoutButtonQuitter"
+        android:layout_width="173dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="260dp"
+        android:background="@android:color/black"
+        android:text="Quitter"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ajoutEditTextStock" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
